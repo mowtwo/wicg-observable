@@ -1,4 +1,4 @@
-# wicg-observable
+# wicg-observable !!! only type file (.d.ts)
 
 A simple implementation of the WICG Observable interface.
 
