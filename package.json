@@ -1,0 +1,22 @@
+{
+  "name": "wicg-observable",
+  "version": "1.0.0",
+  "keywords": [
+    "wicg",
+    "observable",
+    "observable-interface",
+    "observable-interface-implementation"
+  ],
+  "author": "mowtwo",
+  "license": "MIT",
+  "description": "A simple implementation of the WICG Observable interface",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mowtwo/wicg-observable.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./wicg-observable.d.ts"
+    }
+  }
+}
