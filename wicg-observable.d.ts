@@ -66,6 +66,16 @@ declare global {
     inspect(inspectorUnion?: ObservableInspectorUnion): Observable;
     catch(callback: (error: any) => Observable): Observable;
     finally(callback: () => void): Observable;
+
+    // Promise-returning methods
+    toArray(options?: SubscribeOptions): Promise<any[]>;
+    forEach(callback: (value: any, index: number) => void, options?: SubscribeOptions): Promise<void>;
+    every(predicate: (value: any, index: number) => boolean, options?: SubscribeOptions): Promise<boolean>;
+    first(options?: SubscribeOptions): Promise<any>;
+    last(options?: SubscribeOptions): Promise<any>;
+    find(predicate: (value: any, index: number) => boolean, options?: SubscribeOptions): Promise<any>;
+    some(predicate: (value: any, index: number) => boolean, options?: SubscribeOptions): Promise<boolean>;
+    reduce(reducer: (previousValue: any, currentValue: any, index: number) => any, initialValue: any, options?: SubscribeOptions): Promise<any>;
   }
 
   const Observable: {
